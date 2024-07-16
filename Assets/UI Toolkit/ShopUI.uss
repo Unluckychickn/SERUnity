@@ -1,0 +1,49 @@
+.shop-root {
+    background-color: #8B4513; /* Wooden background */
+    padding: 10px;
+    border: 2px solid #000;
+}
+
+.header {
+    font-size: 24px;
+    unity-font-style: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.tab-container {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.tab-button {
+    background-color: #DAA520; /* Golden buttons */
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.section-container {
+    display: none;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.item-button {
+    background-color: #F0E68C; /* Khaki color for item buttons */
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.close-button {
+    background-color: #FF6347; /* Tomato color for close button */
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+}

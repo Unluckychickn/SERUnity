@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="ShopRoot" class="shop-root" style="height: 1080px; width: 1920px; opacity: 1;">
+        <ui:Label text="In-Game Shop" class="header" />
+        <ui:VisualElement name="TabContainer" class="tab-container">
+            <ui:Button name="SkinsTabButton" text="Skins" class="tab-button" />
+            <ui:VisualElement name="SkinsContainer" class="section-container" style="flex-direction: row;">
+                <ui:Button name="Skin1Button" text="Buy Skin 1" class="item-button" style="margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;" />
+                <ui:Button name="Skin2Button" text="Buy Skin 2" class="item-button" style="padding-left: 20px; padding-bottom: 20px; padding-right: 20px; padding-top: 20px; margin-left: 20px; margin-bottom: 20px; margin-right: 20px; margin-top: 20px;" />
+            </ui:VisualElement>
+            <ui:Button name="ConsumablesTabButton" text="Consumables" class="tab-button" style="position: relative;" />
+            <ui:VisualElement name="ConsumablesContainer" class="section-container" style="position: relative; flex-direction: row;">
+                <ui:Button name="Consumable1Button" text="Buy Consumable 1" class="item-button" style="position: relative; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px;" />
+                <ui:Button name="Consumable2Button" text="Buy Consumable 2" class="item-button" style="position: relative; align-items: auto; justify-content: center; align-self: auto; padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; margin-top: 20px; margin-right: 20px; margin-bottom: 20px; margin-left: 20px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button name="CloseButton" text="Close" class="close-button" style="transform-origin: bottom; translate: 0 700px;" />
+    </ui:VisualElement>
+</ui:UXML>

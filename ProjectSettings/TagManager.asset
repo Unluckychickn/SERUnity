@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - SmallVisualPoint
+  - StartingGround
+  - LargeGround
+  - SmallGround
+  - MediumGround
+  - SmallVisual
+  - MediumVisual
+  - SuperMagnet
+  - DoubleCoins
+  - SlowTime
+  - SoundFX
+  - EndlessRunMusic
+  - GameOverMusic
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player
+  - Ground
+  - SuperMagnet
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround1
+    uniqueID: 2054402691
+    locked: 0
+  - name: BackGround2
+    uniqueID: 1753071811
+    locked: 0
+  - name: Platformvisuals
+    uniqueID: 3424536989
+    locked: 0
+  - name: ClockBackground
+    uniqueID: 3460257385
+    locked: 0
+  - name: ClockHandleLarge
+    uniqueID: 3350269917
+    locked: 0
+  - name: ClockHandleSmall
+    uniqueID: 223212769
+    locked: 0
+  - name: Clocknot
+    uniqueID: 4005137827
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
