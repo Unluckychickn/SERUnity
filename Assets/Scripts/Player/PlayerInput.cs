@@ -17,7 +17,6 @@ public class PlayerInput : MonoBehaviour
     [SerializeField] private float slowDownFactor;
     [SerializeField] private AudioClip jumpSound;
     [SerializeField] private AudioClip coinSound;
-    [SerializeField] private AudioClip[] footSteps;
 
     private Rigidbody2D PlayerCharakter;
     private BoxCollider2D coll;
@@ -100,20 +99,20 @@ public class PlayerInput : MonoBehaviour
         Vector3 groundCheckPos = colliderBounds.min + new Vector3(colliderBounds.size.x * 0.5f, colliderRadius * 0.9f, 0);
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheckPos, colliderRadius);
 
-        this.isGrounded = false;
+        isGrounded = false;
         if (colliders.Length > 0)
         {
             for (int i = 0; i < colliders.Length; i++)
             {
                 if (colliders[i].gameObject.layer == groundLayer)
                 {
-                    this.isGrounded = true;
+                    isGrounded = true;
                     CheckDoubleJump = 0;
                     break;
                 }
                 else
                 {
-                    this.isGrounded = false;
+                    isGrounded = false;
                 }
             }
         }
