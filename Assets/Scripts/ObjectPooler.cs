@@ -79,7 +79,7 @@ public class ObjectPooler : MonoBehaviour
         objectToReturn.SetActive(false);        
         PoolDictionary[tag].Enqueue(objectToReturn);}
         else{
-            print($"Object to Return is null! {objectToReturn}");
+            Debug.LogError($"Object to Return is null! {objectToReturn}");
         }
     }
 }

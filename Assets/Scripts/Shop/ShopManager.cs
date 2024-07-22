@@ -113,9 +113,21 @@ public class ShopManager : MonoBehaviour, IPlayerData
             // Deduct coins and add the skin to ownedSkins
             currentCoins -= shopItems[btnNo].baseCost;
            switch(btnNo){
-            case 0: inventory.AddItem(new Item(Item.ItemType.SuperMagnet,1,true, false));
+            case 0:     if(inventory.GetItemList().Count == 0)
+                       { 
+                        inventory.AddItem(new Item(Item.ItemType.SuperMagnet,1,true, true));
+                        }
+                        else{
+                            inventory.AddItem(new Item(Item.ItemType.SuperMagnet, 1, true, false));
+                        }
             break;
-            case 1: inventory.AddItem(new Item(Item.ItemType.FlyTool, 1, true, false));
+            case 1: 
+            if(inventory.GetItemList().Count == 0)
+            {
+                {inventory.AddItem(new Item(Item.ItemType.FlyTool, 1, true, true));}
+            }
+            else
+            {inventory.AddItem(new Item(Item.ItemType.FlyTool, 1, true, false));}
             break;
             
            }

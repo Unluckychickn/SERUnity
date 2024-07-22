@@ -50,7 +50,8 @@ public class PlayerDataManager : MonoBehaviour
     }
 
     private void OnDestroy()
-    {
+    {   
+        SaveGame();
         SceneManager.sceneLoaded -= LoadDataOnSceneLoad;
         SceneManager.sceneUnloaded -= SaveDataFromScene;
     }

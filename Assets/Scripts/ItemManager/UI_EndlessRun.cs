@@ -93,29 +93,39 @@ public class UI_EndlessRun : MonoBehaviour, IPlayerData
     {   selectedItems.Clear();
 
         selectedItems = inventory.GetItemList().FindAll(i => i.firstSelected);
-        if(inventory.GetItemList().Count > 1)
+        
+           foreach(Item item in inventory.GetItemList())
+            {
+                if(!selectedItems.Contains(item) && item.isSelected)
+                {
+                    selectedItems.Add(item);
+                }
+
+            }
+        
+       /* else if(selectedItems.Count < 3 && selectedItems.Count > 1)
         {   foreach(Item item in inventory.GetItemList())
             {
-                if(!selectedItems.Contains(item))
+                if(!selectedItems.Contains(item) && item.isSelected)
                 {
                     selectedItems.Add(item);
                 }
 
             }
 
-        }
+        }*/
     }
 
     private void RefreshDisplay()
     {   
         SetSelectedItems();
        // Clear previous display
-        if(selectedItems.Count < 1){
+        
         itemPreviewSprite_1.sprite = ItemAssets.Instance.emptyField;
         itemPreviewSprite_2.sprite = ItemAssets.Instance.emptyField;
         itemPreviewTemplate_1.GetComponentInChildren<TMP_Text>().text = "";
         itemPreviewTemplate_2.GetComponentInChildren<TMP_Text>().text = "";    
-        }
+        
         
          for (int i = 0; i < selectedItems.Count; i++)
            { Item currentItem = selectedItems[i];

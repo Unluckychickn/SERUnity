@@ -154,8 +154,6 @@ public class GenerateGround : MonoBehaviour
                         
            
             case "LargeGround":
-                
-                print($"Generate Visuals for Large Ground");
                 CoinCounter = 6;
 
                 // Attach a random medium visual
@@ -165,7 +163,7 @@ public class GenerateGround : MonoBehaviour
                 mediumVisual.transform.SetParent(ground.transform);
                 mediumVisual.transform.position = ground.transform.position;
                 }else{
-                    print($"No {tag} found!");
+                    Debug.LogError($"No {tag} found!");
                 }
                 
                 
@@ -175,7 +173,7 @@ public class GenerateGround : MonoBehaviour
                 smallVisual.transform.SetParent(ground.transform);
                 smallVisual.transform.position = ground.transform.position + new Vector3(4, 0, 0);
                 }else{
-                    print($"No {tag} found!");
+                    Debug.LogError($"No {tag} found!");
                 }
                 if(spawnItem)
                 {
@@ -186,8 +184,6 @@ public class GenerateGround : MonoBehaviour
                 break;
             case "MediumGround":
                 
-                print($"Generate Visuals for Medium Ground");
-
                 if(!ground.transform.Find("MediumVisual"))
                 {
                 AttachVisualFromPool(ground, "MediumVisual");
@@ -203,8 +199,6 @@ public class GenerateGround : MonoBehaviour
                 break;
 
             case "SmallGround":
-            
-                print($"Generate Visuals for Small Ground");
 
               if(!ground.transform.Find("SmallVisual")) 
                 {
