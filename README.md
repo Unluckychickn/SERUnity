@@ -1,4 +1,7 @@
 # SER Simple Endless Runner
+
+  Download the APK: https://github.com/Unluckychickn/SERUnity/releases
+
 Made with the help of following ArtCreators:
 
 Music: alkakrab - Piano Instrumental Music Loops
